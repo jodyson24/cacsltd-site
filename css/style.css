@@ -1,0 +1,160 @@
+@import url("./index.css");
+/* @import url('./indexpage.css'); */
+/* @import url('./vars.css'); */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f1f1;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+
+/* General Rules */
+section {
+    width: 100% !important;
+}
+
+.img-free {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Navigation  */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 55px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.site-logo img {
+    width: 90px;
+    object-fit: cover;
+    height: auto;
+}
+
+.nav-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.nav-list ul li {
+    margin: 0 10px;
+}
+
+.nav-list ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-list ul li a:hover {
+    color: blue;
+}
+
+/* Background color change when scrolled */
+nav.scrolled {
+    background-color: white;
+}
+
+/* Change link color when scrolled */
+nav.scrolled .nav-list ul li a {
+    color: black;
+    /* Black when scrolled */
+}
+
+
+/* Footer */
+footer {
+    width: 100% !important;
+    color: #fff !important;
+    padding: 25px;
+}
+
+.footer-logo {
+    width: 220px;
+    object-fit: cover;
+    height: auto;
+}
+
+.footer-socials {
+    display: flex;
+    margin-top: 15px;
+}
+
+.footer-socials li {
+    margin-right: 20px;
+}
+.footer-socials li a {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.footer-links li a {
+    color: #fff;
+    font-size: 12px;
+
+}
+
+
+/* PAGES */
+.ca-homepage {
+    position: relative;
+    top: 0;
+    left: 0;
+}
