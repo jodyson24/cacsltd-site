@@ -1,0 +1,40 @@
+.ad-x {
+    min-height: 300px;
+    height: fit-content;
+}
+.address-box {
+    padding: 70px 40px;
+    /* height: fit-content; */
+}
+.address-box h6 {
+    color: #000000;
+    text-align: left;
+    font-family: "Ingra-Regular7", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+.address-box .add-list li {
+    color: #000000;
+    text-align: left;
+    font-family: "Ingra-Regular7", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+    margin-bottom: 10px;
+}
+.add-line {
+    width: 100%;
+    height: 2px;
+    background-color: #92278F;
+    margin-bottom: 10px;
+}
+.add-img {
+    height: auto;
+    width: 105%;
+    object-fit: cover;
+}
+.add-img-2 {
+    height: auto;
+    width: 105%;
+    object-fit: cover;
+}

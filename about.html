@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav id="navbar">
+    <nav id="navbar" class="bg-white text-dark">
         <div class="logo">
             <a href="/index.html" class="site-logo">
                 <img src="/assets/images/logos/charlesaaronlogo.png" alt="charle's aaron logo" class="site-logo" />
@@ -24,23 +24,31 @@
 
         <div class="nav-list">
             <ul>
-                <li> <a href="/about.html">About Us</a> </li>
-                <li> <a href="/services.html">Our Services</a> </li>
-                <li> <a href="/solutions.html">Our Solutions</a> </li>
-                <li> <a href="/brands.html">Our Brands</a> </li>
-                <li> <a href="/contact.html"> Consultation </a> </li>
+                <li> <a class="text-dark" href="/about.html">About Us</a> </li>
+                <li> <a class="text-dark" href="/services.html">Our Services</a> </li>
+                <li> <a class="text-dark" href="/solutions.html">Our Solutions</a> </li>
+                <li> <a class="text-dark" href="/brands.html">Our Brands</a> </li>
+                <li> <a class="text-dark" href="/contact.html">Contact Us</a> </li>
+                <li> <a class="text-dark" href="/consultation.html"> Consultation </a> </li>
             </ul>
         </div>
     </nav>
 
     <main class="ca-homepage">
-        <section class="banner">
+        <!-- Other pages banner -->
+        <section class="d-oth-banner">
             <div class="container-fluid">
-                <div class="col-lg-4">
-
-                </div>
-                <div class="col-lg-8">
-
+                <div class="row">
+                    <div class="col-lg-5">
+                        <!-- bring forward -->
+                        <div class="oth-b-boxcon">
+                            <h6>About Us</h6>
+                            <div class="oth-b-line"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <img src="./assets/images/about-us/banner.png" class="img-fluid" alt="about us banner" />
+                    </div>
                 </div>
             </div>
         </section>
@@ -48,28 +56,35 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <p>
-                        Charlesaaron Custom Solutions is a residential and commercial consumer electronic systems
-                        provider with nearly a decade worth of industry knowledge and experience. Since our inception,
-                        we have grown to become one of Nigeria's leading suppliers and installers of everything needed
-                        to make your home or office both technically and environmentally forward thinking. Our expertise
-                        spans across many specialties including smart home and office technologies, residential and
-                        commercial electrical services, security, audio and video distribution systems, residential and
-                        commercial cinemas, intelligent lighting and shading, video conferencing, design, consultancy
-                        services and more.
-                    </p>
+                    <div class="abt-maintxt-box">
+                        <p class="about-main-txt">
+                            Charlesaaron Custom Solutions is a residential and commercial consumer electronic systems
+                            provider with nearly a decade worth of industry knowledge and experience. Since our
+                            inception,
+                            we have grown to become one of Nigeria's leading suppliers and installers of everything
+                            needed
+                            to make your home or office both technically and environmentally forward thinking. Our
+                            expertise
+                            spans across many specialties including smart home and office technologies, residential and
+                            commercial electrical services, security, audio and video distribution systems, residential
+                            and
+                            commercial cinemas, intelligent lighting and shading, video conferencing, design,
+                            consultancy
+                            services and more.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section class="mb-5">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6">
-
+                        <img src="./assets/images/about-us/1.png" class="abt-img" alt="about us" />
                     </div>
-                    <div class="col-lg-6">
-                        <div class="about-us-box">
+                    <div class="col-lg-6" style="position: relative;">
+                        <div class="about-us-box aub1">
                             <p>
                                 The wide breadth of our services have been provided to a wide scope of clients, both
                                 small and large, and have been integrated into hotels, corporate offices, entertainment
@@ -83,11 +98,11 @@
             </div>
         </section>
 
-        <section>
+        <section class="mb-5">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="about-us-box">
+                    <div class="col-lg-6" style="position: relative;">
+                        <div class="about-us-box aub2">
                             <p>
                                 We work hard to ensure that all of our solutions are forward thinking; consistently
                                 studying new markets, diligently analyzing existing technologies in order to uncover
@@ -98,7 +113,7 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-
+                        <img src="./assets/images/about-us/2.png" class="abt-img" alt="about us" />
                     </div>
                 </div>
             </div>
@@ -185,10 +200,11 @@
     </footer>
 
 
+
+    <script src="./scripts/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
 </body>
 
 </html>

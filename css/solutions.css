@@ -1,0 +1,82 @@
+.top-solution-tag {
+    color: #000000;
+    text-align: left;
+    font-family: "Ingra-Regular7", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    position: relative;
+}
+
+.sol-cta {
+    position: relative;
+    /* Ensures proper layering */
+    background-image: url('../assets/images/services/cta.png');
+    /* Replace 'your-image.jpg' with the path to your image */
+    background-size: cover;
+    /* Cover the entire container */
+    background-position: center;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    /* Prevent the background image from repeating */
+    overflow: hidden;
+    /* Ensure child elements don't overflow */
+    text-align: center !important;
+}
+
+.sol-cta::before {
+    content: '';
+    /* Required for pseudo-elements */
+    position: absolute;
+    /* Position the overlay */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        95.07deg,
+        rgba(146, 39, 143, 0.715) 8.526139706373215%,
+        rgba(146, 39, 143, 0) 100%
+      );
+    /* Overlay color with opacity */
+    z-index: 1;
+    /* Ensure overlay is behind text but above background image */
+}
+
+.sol-cta-box p {
+    color: #ffffff !important;
+    text-align: center !important;
+    font-family: "Ingra-Regular2", sans-serif !important;
+    font-size: 32px !important;
+    line-height: 42px !important;
+    font-weight: 300 !important;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 40px !important;
+}
+
+.sol-cta-box p {
+    color: #ffffff !important;
+    text-align: center;
+    font-family: "Ingra-Regular2", sans-serif;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 300 !important;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px !important;
+}
+
+.sol-cta-box button {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px;
+    padding: 11px 50px;
+    color: #ffffff;
+    font-family: "Ingra-Regular3", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+    z-index: 2;
+}
