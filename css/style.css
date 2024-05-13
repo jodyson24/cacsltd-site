@@ -3,6 +3,7 @@
 @import url('./services.css');
 @import url('./contact.css');
 @import url('./solutions.css');
+@import url('./consultation.css');
 
 * {
     box-sizing: border-box;
@@ -52,8 +53,18 @@ img {
     z-index: -2;
 }
 
+button {
+    border: none;
+    outline: none;
+}
+
 /* General Rules */
 section {
+    width: 100% !important;
+}
+
+.container-fluid,
+.row {
     width: 100% !important;
 }
 
@@ -184,7 +195,10 @@ nav.scrolled .nav-list ul li a {
 footer {
     width: 100% !important;
     color: #fff !important;
-    padding: 25px;
+    padding: 25px 0px 0px 0px;
+    background-color: #0c0c0c;
+    min-height: 300px;
+    height: fit-content;
 }
 
 .footer-logo {
@@ -214,6 +228,15 @@ footer {
 
 }
 
+.footer-bottom {
+    text-align: center;
+    color: #fff;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    font-weight: 500;
+}
 
 /* PAGES */
 .ca-homepage {

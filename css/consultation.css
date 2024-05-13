@@ -1,0 +1,119 @@
+.s-oth-banner {
+    min-height: 100vh;
+    height: fit-content;
+}
+
+.c-banner {
+    position: relative;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url('../assets/images/consultation/1.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .bg-c-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+} */
+
+/* .bg-c-img .c-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.724);
+    z-index: 0;
+} */
+
+.sol-banner {
+    position: relative;
+    z-index: 1;
+}
+
+.sol-banner h6 {
+    color: #000000;
+    text-align: left;
+    font-family: "Ingra-Regular2", sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    position: relative;
+}
+
+.con-line {
+    height: 3px;
+    width: 250px;
+    background-color: #000;
+    margin-bottom: 15px;
+}
+
+.sol-banner p {
+    color: #000000;
+    text-align: left;
+    font-family: "Ingra-Regular2", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+}
+
+.cbanner-form h6 {
+    font-size: 15px;
+}
+
+.cbanner-form p {
+    font-size: 13px;
+}
+
+.f-in h6 {
+    font-size: 15px;
+}
+
+.f-in p {
+    font-size: 13px;
+}
+
+
+.cb-bb {
+    display: flex;
+    align-items: center;
+}
+
+.consult-box {
+    padding-left: 70px;
+}
+
+.consult-box h6 {
+    border-left: 6px solid #92278f;
+    padding-left: 10px;
+    color: #222222;
+    text-align: left;
+    font-family: "Ingra-Regular5", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.consult-box p {
+    color: #000000;
+    text-align: left;
+    font-family: "Ingra-Regular3", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+}
+
+.consult-box .consult-button {
+    padding: 8px 45px;
+    background: rgba(146, 39, 143, 0);
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}

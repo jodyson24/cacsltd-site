@@ -7,6 +7,58 @@
     position: relative;
 }
 
+.solution-box h6 {
+    color: #000000;
+    text-align: left;
+    font-family: "Ingra-Regular3", sans-serif;
+    font-size: 38px;
+    font-weight: 400;
+    position: relative;
+}
+
+.solution-box p {
+    font-size: 14px;
+    text-align: left;
+    font-family: "Ingra-Regular3", sans-serif;
+}
+
+.sol-b-line {
+    background: #92278f;
+    height: 1.94px;
+    width: 420px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.sol-b-inner {
+    width: 100%;
+    text-align: center;
+}
+
+.icons-list {
+    width: 100% !important;
+}
+
+.icons-list ul li {
+    margin: 10px 15px;
+}
+
+.icons-list ul li svg {
+    text-align: center;
+}
+
+.sol-b-btn {
+    /* background-color: #92278F; */
+    border: 1px solid #92278F;
+    color: #92278F;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 13px 45px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0);
+    /* margin: 10 auto; */
+}
+
 .sol-cta {
     position: relative;
     /* Ensures proper layering */
@@ -32,11 +84,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        95.07deg,
-        rgba(146, 39, 143, 0.715) 8.526139706373215%,
-        rgba(146, 39, 143, 0) 100%
-      );
+    background: linear-gradient(95.07deg,
+            rgba(146, 39, 143, 0.715) 8.526139706373215%,
+            rgba(146, 39, 143, 0) 100%);
     /* Overlay color with opacity */
     z-index: 1;
     /* Ensure overlay is behind text but above background image */
