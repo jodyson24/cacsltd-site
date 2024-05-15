@@ -1,30 +1,81 @@
+.overlap-elements {
+    position: relative;
+    inset: 0;
+}
+
+.solution-section {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
 .top-solution-tag {
+    padding: 25px 40px 45px 85px;
+}
+.top-solution-tag.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-solution-tag h6 {
     color: #000000;
     text-align: left;
-    font-family: "Ingra-Regular7", sans-serif;
     font-size: 40px;
     font-weight: 400;
+}
+
+.para {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90px;
+    /* Height of top-solution-tag plus any additional margin */
+    z-index: 999;
+    /* Adjust z-index as needed */
+    background-color: white;
+    /* Optional: Add background color for clarity */
+    padding: 20px;
+    /* Adjust padding as needed */
+    margin-top: -60px;
+    /* Compensate for top-solution-tag height */
+    width: 100%;
+}
+
+.ext-stick {
+    position: -webkit-sticky !important;
+    position: sticky;
+    top: 100px;
+    z-index: 999;
+}
+
+.static {
     position: relative;
+    overflow: hidden;
+}
+
+.static img {
+    width: 100%;
+    height: 740px;
+    display: block;
 }
 
 .solution-box h6 {
     color: #000000;
     text-align: left;
-    font-family: "Ingra-Regular3", sans-serif;
     font-size: 38px;
-    font-weight: 400;
+    font-weight: 500;
     position: relative;
 }
 
 .solution-box p {
     font-size: 14px;
     text-align: left;
-    font-family: "Ingra-Regular3", sans-serif;
 }
 
 .sol-b-line {
     background: #92278f;
-    height: 1.94px;
+    height: 2.04px;
     width: 420px;
     position: relative;
     margin-bottom: 15px;
@@ -37,6 +88,12 @@
 
 .icons-list {
     width: 100% !important;
+}
+
+.icons-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icons-list ul li {
@@ -95,7 +152,6 @@
 .sol-cta-box p {
     color: #ffffff !important;
     text-align: center !important;
-    font-family: "Ingra-Regular2", sans-serif !important;
     font-size: 32px !important;
     line-height: 42px !important;
     font-weight: 300 !important;
@@ -107,7 +163,6 @@
 .sol-cta-box p {
     color: #ffffff !important;
     text-align: center;
-    font-family: "Ingra-Regular2", sans-serif;
     font-size: 32px;
     line-height: 42px;
     font-weight: 300 !important;
@@ -124,7 +179,6 @@
     border-width: 1px;
     padding: 11px 50px;
     color: #ffffff;
-    font-family: "Ingra-Regular3", sans-serif;
     font-size: 14px;
     font-weight: 400;
     position: relative;
