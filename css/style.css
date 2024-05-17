@@ -376,7 +376,7 @@ footer {
     .oth-b-boxcon {
         position: relative;
         /* Add this */
-        margin: auto;
+        margin: auto auto auto 35px;
         z-index: 9;
     }
     
@@ -387,7 +387,7 @@ footer {
         font-size: 28px;
         font-weight: 500;
         position: relative;
-        margin-left: 35px;
+        /* margin-left: 35px; */
         /* margin-bottom: 15px; */
         /* Add this */
         /* bottom: -10px; */
@@ -403,7 +403,7 @@ footer {
         width: 90%;
         background-color: #92278F;
         position: relative;
-        margin-left: 35px;
+        /* margin-left: 35px; */
         margin-bottom: 25px;
         /* Add this */
         /* bottom: -10px; */
@@ -421,9 +421,9 @@ footer {
         font-size: 15px;
         font-weight: 400;
         position: relative;
-        margin-left: 35px;
+        /* margin-left: 35px; */
         /* Add this */
-        /* bottom: -80px; */
+        bottom: 0px;
         /* Adjust this value to control the line's position */
         /* left: 0; */
         /* Add this */
