@@ -1,3 +1,7 @@
+.hid-text {
+    display: none;
+}
+
 .services-box {
     padding: 65px 50px 50px 50px;
 }
@@ -47,11 +51,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        95.07deg,
-        rgba(146, 39, 143, 0.715) 8.526139706373215%,
-        rgba(146, 39, 143, 0) 100%
-      );
+    background: linear-gradient(95.07deg,
+            rgba(146, 39, 143, 0.715) 8.526139706373215%,
+            rgba(146, 39, 143, 0) 100%);
     /* Overlay color with opacity */
     z-index: 1;
     /* Ensure overlay is behind text but above background image */
@@ -88,4 +90,20 @@
     font-weight: 400;
     position: relative;
     z-index: 2;
+}
+
+
+/* Mobile  and Taablet*/
+@media only screen and (max-width: 992px) { 
+    .hid-text {
+        display: block;
+        padding: 25px;
+        text-align: center;
+    }
+    .sb-line {
+        height: 2px;
+        width: 85%;
+        background-color: #92278F;
+        margin-bottom: 15px;
+    }
 }

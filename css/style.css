@@ -54,7 +54,10 @@ h6 {
 }
 
 img {
-    z-index: -2;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: 100% 100%;
 }
 
 button {
@@ -69,7 +72,11 @@ section {
 
 .container-fluid,
 .row {
-    width: 100% !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    width: 100%;
 }
 
 .img-free {
@@ -140,8 +147,9 @@ nav {
     justify-content: space-between;
     padding: 15px 55px;
     /* position: -webkit-sticky;
-    position: sticky;
-    top: 0; */
+    position: sticky; */
+    position: relative;
+    top: 0;
     z-index: 1000;
     width: 100%;
     background-color: transparent;
@@ -192,6 +200,10 @@ nav.scrolled {
 nav.scrolled .nav-list ul li a {
     color: black;
     /* Black when scrolled */
+}
+
+.mobile-nav {
+    display: none;
 }
 
 
@@ -251,4 +263,172 @@ footer {
     position: relative;
     top: 0;
     left: 0;
+}
+
+
+
+/* Mobile  and Taablet*/
+@media only screen and (max-width: 992px) {
+    body {
+        margin: 0;
+        padding: 0;
+        /* width: 100% !important; */
+    }
+
+   /* Hide desktop nav on smaller screens */
+   #navbar {
+    display: none;
+}
+
+    /* Basic styling for the mobile nav */
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: white;
+        z-index: 1000;
+    }
+
+    .mobile-nav .logo img {
+        height: 40px;
+        /* Adjust as needed */
+    }
+
+    .mobile-nav .nav-toggle {
+        background: none;
+        border: none;
+        font-size: 24px;
+    }
+
+    .mobile-nav-list {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+    }
+
+    .mobile-nav-list.show {
+        display: flex;
+    }
+
+    .mobile-nav-list .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 24px;
+    }
+
+    .mobile-nav-list ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .mobile-nav-list ul li {
+        margin: 15px 0;
+    }
+
+    .mobile-nav-list ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #000;
+    }
+
+
+    .mobile-visible {
+        display: block;
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
+
+    /* Center footer content */
+    .footer-top .row {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 15px;
+    }
+
+    .footer-socials {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .footer-bottom {
+        margin-top: 20px;
+    }
+
+    /* GENERAL RULES */
+    .oth-b-boxcon {
+        position: relative;
+        /* Add this */
+        margin: auto;
+        z-index: 9;
+    }
+    
+    .oth-b-boxcon h6 {
+        color: #000000;
+        text-align: left;
+        font-family: "Ingra-Regular2", sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+        position: relative;
+        margin-left: 35px;
+        /* margin-bottom: 15px; */
+        /* Add this */
+        /* bottom: -10px; */
+        /* Adjust this value to control the line's position */
+        /* left: 10; */
+        /* Add this */
+        /* z-index: 1; */
+        /* Add this */
+    }
+    
+    .oth-b-line {
+        height: 2px;
+        width: 600px;
+        background-color: #92278F;
+        position: relative;
+        margin-left: 35px;
+        margin-bottom: 25px;
+        /* Add this */
+        /* bottom: -10px; */
+        /* Adjust this value to control the line's position */
+        /* left: 0; */
+        /* Add this */
+        /* z-index: 1; */
+        /* Add this */
+    }
+    
+    .oth-b-boxcon p {
+        color: #000000;
+        text-align: left;
+        font-family: "Ingra-Regular2", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        position: relative;
+        margin-left: 35px;
+        /* Add this */
+        /* bottom: -80px; */
+        /* Adjust this value to control the line's position */
+        /* left: 0; */
+        /* Add this */
+        /* z-index: 1; */
+        /* Add this */
+    }
+
 }

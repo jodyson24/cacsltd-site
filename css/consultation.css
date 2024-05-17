@@ -113,3 +113,24 @@
     font-weight: 400;
     color: #000000;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .c-banner {
+        min-height: 400px;
+        width: 100%;
+    }
+    .cb-bb {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 45px;
+    }
+    .consult-box {
+        padding-left: 0px;
+        text-align: center;
+    }
+    .consult-button {
+       margin: 0 auto;
+    }
+}

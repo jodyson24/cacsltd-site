@@ -1,4 +1,33 @@
 
+    // $(document).ready(function(){
+    //     $("#toggleButton").click(function(){
+    //         $(".mobile-nav-list").slideToggle(); // Toggles visibility
+    //         if($(".mobile-nav-list button").length === 0) { // Checks if close button already exists
+    //             $(".mobile-nav-list").append("<button id='closeButton'>Close</button>"); // Adds close button
+    //         }
+    //     });
+
+    //     // Click event for close button
+    //     $(document).on('click', '#closeButton', function(){
+    //         $(".mobile-nav-list").slideToggle(); // Toggles visibility
+    //         $(this).remove(); // Removes close button
+    //     });
+    // });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var toggleButton = document.getElementById('toggleButton');
+        var mobileNavList = document.getElementById('mobileNavList');
+        var closeButton = mobileNavList.querySelector('.close-button');
+
+        toggleButton.addEventListener('click', function () {
+            mobileNavList.classList.toggle('show');
+        });
+
+        closeButton.addEventListener('click', function () {
+            mobileNavList.classList.remove('show');
+        });
+    });
+
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
@@ -26,6 +55,7 @@ solutionSections.forEach(section => {
 
     observer.observe(section);
 });
+
 
 
 // document.addEventListener('DOMContentLoaded', function() {
