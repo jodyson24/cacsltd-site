@@ -18,7 +18,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 950;
 }
 
 .top-solution-tag h6 {
@@ -33,7 +33,7 @@
     position: sticky;
     top: 90px;
     /* Height of top-solution-tag plus any additional margin */
-    z-index: 999;
+    z-index: 900;
     /* Adjust z-index as needed */
     background-color: white;
     /* Optional: Add background color for clarity */
@@ -212,7 +212,7 @@
         position: -webkit-sticky;
         position: sticky;
         top: 90px;
-        z-index: 999;
+        z-index: 900;
         background-color: white;
         margin-top: 0px;
         width: 100%;
@@ -230,7 +230,7 @@
     .top-solution-tag {
         padding: 10px 10px 10px 45px;
         background-color: #ffffff;
-        z-index: 1000;
+        z-index: 950;
     }
 
     .top-solution-tag h6 {
