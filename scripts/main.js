@@ -56,6 +56,24 @@ solutionSections.forEach(section => {
     observer.observe(section);
 });
 
+// script.js
+
+// Function to scroll to the top of the page
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  
+  // Show/hide the scroll-to-top button based on scroll position
+  window.addEventListener('scroll', () => {
+    const scrollToTopButton = document.querySelector('.scroll-to-top');
+    if (window.scrollY > 300) {
+      scrollToTopButton.classList.add('show');
+    } else {
+      scrollToTopButton.classList.remove('show');
+    }
+  });
+  
+
 
 
 // document.addEventListener('DOMContentLoaded', function() {

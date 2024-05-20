@@ -266,6 +266,53 @@ footer {
 }
 
 
+/* SPECIALS */
+/* General button styles */
+.whatsapp-button,
+.scroll-to-top {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #25D366;
+    /* WhatsApp green */
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: bottom 0.3s, right 0.3s;
+    z-index: 1000;
+}
+
+/* WhatsApp button specific styles */
+.whatsapp-button {
+    bottom: 20px;
+    right: 20px;
+}
+
+.whatsapp-button img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Scroll to top button specific styles */
+.scroll-to-top {
+    bottom: 80px;
+    /* Adjust to place it above the WhatsApp button */
+    right: 20px;
+    display: none;
+    /* Initially hidden */
+}
+
+.scroll-to-top.show {
+    display: flex;
+    /* Show button when needed */
+}
+
 
 /* Mobile  and Taablet*/
 @media only screen and (max-width: 992px) {
@@ -275,10 +322,10 @@ footer {
         /* width: 100% !important; */
     }
 
-   /* Hide desktop nav on smaller screens */
-   #navbar {
-    display: none;
-}
+    /* Hide desktop nav on smaller screens */
+    #navbar {
+        display: none;
+    }
 
     /* Basic styling for the mobile nav */
     .mobile-nav {
@@ -379,7 +426,7 @@ footer {
         margin: auto auto auto 35px;
         z-index: 9;
     }
-    
+
     .oth-b-boxcon h6 {
         color: #000000;
         text-align: left;
@@ -397,7 +444,7 @@ footer {
         /* z-index: 1; */
         /* Add this */
     }
-    
+
     .oth-b-line {
         height: 2px;
         width: 90%;
@@ -413,7 +460,7 @@ footer {
         /* z-index: 1; */
         /* Add this */
     }
-    
+
     .oth-b-boxcon p {
         color: #000000;
         text-align: left;
@@ -429,6 +476,24 @@ footer {
         /* Add this */
         /* z-index: 1; */
         /* Add this */
+    }
+
+
+    /* SPECIALS */
+    .whatsapp-button,
+    .scroll-to-top {
+        width: 40px;
+        height: 40px;
+    }
+
+    .whatsapp-button img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .scroll-to-top {
+        bottom: 70px;
+        /* Adjust to place it above the WhatsApp button */
     }
 
 }
