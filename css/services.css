@@ -40,6 +40,7 @@
     /* Prevent the background image from repeating */
     overflow: hidden;
     /* Ensure child elements don't overflow */
+    height: fit-content;
 }
 
 .services-cta::before {
