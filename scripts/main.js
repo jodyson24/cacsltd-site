@@ -26,9 +26,10 @@ function scrollFunction() {
 // LAnguage Switcher
 function updateLanguageLinks(language) {
     var links = document.querySelectorAll('.ldm-item');
-    links.forEach(function (link) {
+    links.forEach(function(link) {
         var href = link.getAttribute('href');
         var newHref = '../' + language + '/' + href.split('/')[2];
+        console.log('Updating link:', href, 'to', newHref); // Debugging line
         link.setAttribute('href', newHref);
     });
 }
