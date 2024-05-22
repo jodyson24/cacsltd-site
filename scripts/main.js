@@ -1,32 +1,17 @@
 
-    // $(document).ready(function(){
-    //     $("#toggleButton").click(function(){
-    //         $(".mobile-nav-list").slideToggle(); // Toggles visibility
-    //         if($(".mobile-nav-list button").length === 0) { // Checks if close button already exists
-    //             $(".mobile-nav-list").append("<button id='closeButton'>Close</button>"); // Adds close button
-    //         }
-    //     });
+document.addEventListener('DOMContentLoaded', function () {
+    var toggleButton = document.getElementById('toggleButton');
+    var mobileNavList = document.getElementById('mobileNavList');
+    var closeButton = mobileNavList.querySelector('.close-button');
 
-    //     // Click event for close button
-    //     $(document).on('click', '#closeButton', function(){
-    //         $(".mobile-nav-list").slideToggle(); // Toggles visibility
-    //         $(this).remove(); // Removes close button
-    //     });
-    // });
-
-    document.addEventListener('DOMContentLoaded', function () {
-        var toggleButton = document.getElementById('toggleButton');
-        var mobileNavList = document.getElementById('mobileNavList');
-        var closeButton = mobileNavList.querySelector('.close-button');
-
-        toggleButton.addEventListener('click', function () {
-            mobileNavList.classList.toggle('show');
-        });
-
-        closeButton.addEventListener('click', function () {
-            mobileNavList.classList.remove('show');
-        });
+    toggleButton.addEventListener('click', function () {
+        mobileNavList.classList.toggle('show');
     });
+
+    closeButton.addEventListener('click', function () {
+        mobileNavList.classList.remove('show');
+    });
+});
 
 window.onscroll = function () { scrollFunction() };
 
@@ -37,6 +22,17 @@ function scrollFunction() {
         document.getElementById("navbar").classList.remove("scrolled");
     }
 }
+
+// LAnguage Switcher
+function updateLanguageLinks(language) {
+    var links = document.querySelectorAll('.ldm-item');
+    links.forEach(function (link) {
+        var href = link.getAttribute('href');
+        var newHref = '../' + language + '/' + href.split('/')[2];
+        link.setAttribute('href', newHref);
+    });
+}
+
 
 // JavaScript to make top tags sticky when scrolled
 const solutionSections = document.querySelectorAll('.solution-section');
@@ -61,77 +57,32 @@ solutionSections.forEach(section => {
 // Function to scroll to the top of the page
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-  
-  // Show/hide the scroll-to-top button based on scroll position
-  window.addEventListener('scroll', () => {
+}
+
+// Show/hide the scroll-to-top button based on scroll position
+window.addEventListener('scroll', () => {
     const scrollToTopButton = document.querySelector('.scroll-to-top');
     if (window.scrollY > 300) {
-      scrollToTopButton.classList.add('show');
+        scrollToTopButton.classList.add('show');
     } else {
-      scrollToTopButton.classList.remove('show');
+        scrollToTopButton.classList.remove('show');
     }
-  });
-  
+});
 
 
+document.getElementById('languageToggleMobile').addEventListener('click', function (event) {
+    event.preventDefault();
+    event.stopPropagation(); // Prevent closing the dropdown
+    const langMenu = document.querySelector('.mobile-lang-drop-menu');
+    langMenu.classList.toggle('show');
+});
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const scroll = new LocomotiveScroll({
-//       el: document.querySelector('[data-scroll-container]'),
-//       smooth: true,
-//       getDirection: true
-//     });
-//   });
+document.addEventListener('click', function (event) {
+    const langMenu = document.querySelector('.mobile-lang-drop-menu');
+    const langToggle = document.getElementById('languageToggleMobile');
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     const scroll = new LocomotiveScroll({
-//       el: document.querySelector('[data-scroll-container]'),
-//       smooth: true,
-//       getDirection: true
-//     });
-  
-//     const sections = document.querySelectorAll('[data-scroll]');
-//     const staticCols = document.querySelectorAll('.static');
-//     const solutionBoxes = document.querySelectorAll('.solution-box');
-//     let currentIndex = 0;
-  
-//     // Hide all static columns except the first one
-//     for (let i = 1; i < staticCols.length; i++) {
-//       staticCols[i].style.display = 'none';
-//     }
-  
-//     // Listen for scroll stop event
-//     scroll.on('scrollStop', function() {
-//       const direction = scroll.direction;
-  
-//       if (direction === 'up') {
-//         currentIndex--;
-//       } else if (direction === 'down') {
-//         currentIndex++;
-//       }
-  
-//       if (currentIndex < 0) {
-//         currentIndex = 0;
-//       } else if (currentIndex >= sections.length) {
-//         currentIndex = sections.length - 1;
-//       }
-  
-//       // Hide the current static column and show the next one
-//       if (currentIndex > 0) {
-//         staticCols[currentIndex - 1].style.display = 'none';
-//         staticCols[currentIndex].style.display = 'block';
-//       }
-  
-//       // Add active class to the current solution box
-//       solutionBoxes.forEach((box, index) => {
-//         if (index === currentIndex) {
-//           box.classList.add('active');
-//         } else {
-//           box.classList.remove('active');
-//         }
-//       });
-  
-//       sections[currentIndex].scrollIntoView({ behavior: 'smooth' });
-//     });
-//   });  
+    // Close the language dropdown menu if clicked outside
+    if (!langMenu.contains(event.target) && !langToggle.contains(event.target)) {
+        langMenu.classList.remove('show');
+    }
+});
