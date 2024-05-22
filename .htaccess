@@ -1,2 +1,12 @@
 RewriteEngine On
-RewriteRule ^$ /en [L]
+RewriteBase /
+
+# Redirect root to /en
+RewriteRule ^$ /en/ [L]
+
+# Serve static files directly
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(assets|css|scripts)/ - [L]
+
+# Fallback to index.html for client-side routing
+RewriteRule ^(en|fr|ar)(/.*)?$ $1/index.html [L]
