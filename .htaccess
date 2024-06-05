@@ -1,12 +1,13 @@
+# Enable rewrite engine
 RewriteEngine On
-RewriteBase /
 
-# Redirect root to /en
-RewriteRule ^$ /en/ [L]
+# Redirect the root to /en directory
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^$ /en/ [L,R=301]
 
-# Serve static files directly
-RewriteCond %{REQUEST_FILENAME} -f
-RewriteRule ^(assets|css|scripts)/ - [L]
+# Optional: Make sure that the language directories don't get overridden by other rules
+RewriteCond %{REQUEST_URI} !^/en/
+RewriteCond %{REQUEST_URI} !^/fr/
+RewriteCond %{REQUEST_URI} !^/ar/
 
-# Fallback to index.html for client-side routing
-RewriteRule ^(en|fr|ar)(/.*)?$ $1/index.html [L]
+# You can add more custom rules below as needed
