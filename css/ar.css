@@ -1,3 +1,39 @@
 *{
     text-align: right !important;
 }
+.sol-b-line-ar {
+    display: flex;
+    justify-content: end !important;
+}
+
+.icons-list ul {
+    display: grid;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+    /* Adjust the gap as needed */
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.icons-list ul>li {
+    justify-self: flex-end;
+    /* Center individual items within their grid cell */
+}
+
+/* For rows with less than 4 items */
+.icons-list ul:only-child,
+.icons-list ul li:nth-child(n+1):nth-child(-n+3):only-child {
+    justify-content: flex-end;
+    /* Center the row */
+}
+
+.icons-list ul li svg {
+    text-align: right;
+}
+
+
+@media only screen and (max-width: 992px) {
+    /* .sol-b-line-ar {
+        width: 45%;
+    } */
+}
