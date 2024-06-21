@@ -1,6 +1,125 @@
-*{
+* {
     text-align: right !important;
 }
+
+/* ---- INDEX PAGE ------ */
+.featured-text-content-ar {
+    padding: 105px 185px 0px 75px;
+}
+
+.featured-text-content-ar h6 {
+    border-right: 3px solid #92278F;
+    padding-right: 5px;
+    color: #222222;
+    font-size: 25px;
+    font-weight: 600;
+    word-wrap: break-word
+}
+
+.featured-text-content-ar p {
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.index-mis-box-ar {
+    text-align: center !important;
+}
+
+.index-mis-box-ar h4 {
+    text-align: center !important;
+}
+
+.index-mis-box-ar p {
+    padding: 0px 300px;
+    text-align: center !important;
+}
+
+.ms-btn {
+    border: 1px solid #000;
+    font-size: 14px;
+    padding: 12px 45px;
+    background: rgba(146, 39, 143, 0);
+    border-radius: 7px;
+}
+
+.cta-index-box-ar {
+    padding: 100px 0px 0px 0px;
+    color: #fff;
+    text-align: center !important;
+}
+
+.cta-index-box-ar h5 {
+    color: white;
+    font-size: 36px;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center !important;
+    margin-bottom: 15px;
+}
+
+.cta-index-box-ar h6 {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center !important;
+}
+
+.cta-index-box-ar button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    word-wrap: break-word;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* ---- ABOUT PAGE ------ */
+.about-us-box-ar {
+    background: #f0f0f0;
+    min-height: 250px;
+    height: fit-content;
+    padding: 55px;
+    z-index: 9;
+}
+
+.about-us-box-ar p {
+    border-right: 2px solid #92278F;
+    padding: 0px 15px 0px 15px;
+    width: 85%;
+}
+
+.aub1 {
+    margin-top: 145px;
+    margin-left: -65px;
+}
+
+.aub2 {
+    margin-top: 125px;
+    position: absolute;
+    /* Add this */
+    right: -35px;
+    left: 0;
+    /* Add this */
+    z-index: 1;
+    /* Add this */
+}
+
+
+/* ---- SERVICES PAGE ------ */
+.sb-line-ar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/* ---- SOLTUTIONS PAGE ------ */
 .sol-b-line-ar {
     display: flex;
     justify-content: end !important;
@@ -31,6 +150,40 @@
     text-align: right;
 }
 
+
+/* ---- CONSULTAION PAGE ------ */
+.consult-box-ar {
+    padding-left: 70px;
+}
+
+.consult-box-ar h6 {
+    border-right: 6px solid #92278f;
+    padding-right: 10px;
+    color: #222222;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.consult-box-ar p {
+    color: #000000;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+}
+
+.consult-box-ar .consult-button {
+    padding: 8px 45px;
+    background: rgba(146, 39, 143, 0);
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 1px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000;
+}
 
 @media only screen and (max-width: 992px) {
     /* .sol-b-line-ar {
