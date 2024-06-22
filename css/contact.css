@@ -1,9 +1,37 @@
+.xcv h6 {
+    font-size: 24px;
+    font-weight: 500;
+}
+.xcv p {
+    padding-right: 40%;
+}
+.contact-socials {
+    display: inline-flex;
+}
+.contact-socials li a  {
+    font-size: 34px;
+    padding-right: 15px;
+}
+.contact-socials li a i{
+    color: #92278F;
+}
+
+.vst h6 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.vst p {
+    font-size: 16px;
+    /* font-weight: 500; */
+    padding: 0px 300px;
+}
 .ad-x {
-    min-height: 300px;
+    min-height: 410px;
     height: fit-content;
 }
 .address-box {
-    padding: 70px 40px;
+    padding: 20px;
     /* height: fit-content; */
 }
 .address-box h6 {
@@ -35,4 +63,11 @@
     height: auto;
     width: 105%;
     object-fit: cover;
+}
+
+/* Adjust banner styles for tablet view */
+@media (max-width: 992px) { 
+    .xcv p {
+        padding-right: 20%;
+    }
 }

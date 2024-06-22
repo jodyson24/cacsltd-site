@@ -114,8 +114,8 @@
 
 /* ---- SERVICES PAGE ------ */
 .sb-line-ar {
-  display: flex;
-  justify-content: flex-end;
+    display: flex;
+    justify-content: flex-end;
 }
 
 
@@ -151,6 +151,24 @@
 }
 
 
+/* ---- CONTACT PAGE ------ */
+.xcv-ar h6 {
+    font-size: 24px;
+    font-weight: 500;
+}
+.xcv-ar {
+    padding-left: 40%;
+}
+.vst-ar h6 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.vst-ar p {
+    font-size: 16px;
+    text-align: right !important;
+}
+
 /* ---- CONSULTAION PAGE ------ */
 .consult-box-ar {
     padding-left: 70px;
@@ -185,8 +203,9 @@
     color: #000000;
 }
 
-@media only screen and (max-width: 992px) {
-    /* .sol-b-line-ar {
-        width: 45%;
-    } */
+/* Adjust banner styles for tablet view */
+@media (max-width: 992px) { 
+    .xcv p {
+        padding-left: 20%;
+    }
 }
