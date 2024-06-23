@@ -13,6 +13,7 @@ session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check if the form has been submitted in the same session
     if (!isset($_SESSION['form_submitted'])) {
+        $language = isset($_POST['language']) ? $_POST['language'] : 'en';
         $firstname = isset($_POST['firstname']) ? $_POST['firstname'] : '';
         $lastname = isset($_POST['lastname']) ? $_POST['lastname'] : '';
         $email = isset($_POST['email']) ? $_POST['email'] : '';
@@ -25,7 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $tech = isset($_POST['tech']) ? $_POST['tech'] : '';
         $interests = isset($_POST['interests']) ? implode(', ', $_POST['interests']) : '';
         $policyAgree = isset($_POST['policyAgree']) ? $_POST['policyAgree'] : '';
-        $language = isset($_POST['language']) ? $_POST['language'] : 'en';
 
         $mail = new PHPMailer(true);
 
@@ -48,14 +48,44 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->Port = 465;
 
             // Recipients
-            $mail->setFrom('consultation@cacs-ltd.com', 'Mailer');
-            $mail->addAddress('consultation@cacs-ltd.com', "Consultation");
+            $mail->setFrom('consultation@cacs-ltd.com', 'Consultation');
+            $mail->addAddress('consultation@cacs-ltd.com', 'Consultation');
 
             // Content
             $mail->isHTML(true);
             $mail->Subject = 'New Consultation Enquiry';
-            $mail->Body = "First Name: $firstname<br>Last Name: $lastname<br>Email: $email<br>Phone: $phone<br>Country: $country<br>State: $state<br>City: $city<br>Identity: $identity<br>Message: $message<br>Smart Technology: $tech<br>Interests: $interests<br>Policy Agreement: $policyAgree";
-            $mail->AltBody = "First Name: $firstname\nLast Name: $lastname\nEmail: $email\nPhone: $phone\nCountry: $country\nState: $state\nCity: $city\nIdentity: $identity\nMessage: $message\nSmart Technology: $tech\nInterests: $interests\nPolicy Agreement: $policyAgree";
+            $mail->Body = "
+                <h2>Consultation Form Submission Details</h2>
+                <p><strong>Language:</strong> $language</p>
+                <p><strong>First Name:</strong> $firstname</p>
+                <p><strong>Last Name:</strong> $lastname</p>
+                <p><strong>Email:</strong> $email</p>
+                <p><strong>Phone:</strong> $phone</p>
+                <p><strong>Country:</strong> $country</p>
+                <p><strong>State:</strong> $state</p>
+                <p><strong>City:</strong> $city</p>
+                <p><strong>Identity:</strong> $identity</p>
+                <p><strong>Message:</strong> $message</p>
+                <p><strong>Smart Technology:</strong> $tech</p>
+                <p><strong>Interests:</strong> $interests</p>
+                <p><strong>Policy Agreement:</strong> $policyAgree</p>
+            ";
+            $mail->AltBody = "
+                Consultation Form Submission Details
+                Language: $language
+                First Name: $firstname
+                Last Name: $lastname
+                Email: $email
+                Phone: $phone
+                Country: $country
+                State: $state
+                City: $city
+                Identity: $identity
+                Message: $message
+                Smart Technology: $tech
+                Interests: $interests
+                Policy Agreement: $policyAgree
+            ";
 
             $mail->send();
 
@@ -85,9 +115,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         unset($_SESSION['form_submitted']);
     }
 } else {
-    // Redirect or handle the case where the form is not submitted
     // Log message instead of displaying it on the webpage
     error_log("Form not submitted: session variable 'form_submitted' is already set.");
     // Return an error response as JSON
     echo json_encode(['success' => false, 'message' => 'Form not submitted: session variable is already set.']);
 }
+?>

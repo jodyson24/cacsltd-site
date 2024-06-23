@@ -131,6 +131,9 @@
 .cta-index {
   height: fit-content;
   background-image: url('../assets/images/homepage/all-one-smart-home-control-system-app-concept-tablet-display-man-hands-10.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
 
 .p-bac {
