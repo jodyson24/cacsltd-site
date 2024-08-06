@@ -492,7 +492,11 @@ footer {
     z-index: 1000;
 }
 
-
+.p-line {
+    width: 35%;
+    height: 0.15rem;
+    background-color: #92278F;
+}
 /* Mobile  and Taablet*/
 @media only screen and (max-width: 992px) {
     body {
