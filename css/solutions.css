@@ -61,8 +61,9 @@
 
 .static img {
     width: 100% !important;
-    height: auto;
+    height: 98vh;
     display: block;
+    object-fit: cover;
 }
 
 .solution-box {
@@ -205,6 +206,70 @@
     position: relative;
     z-index: 2;
 }
+
+
+/* TOOLTIPS */
+
+.svg-container {
+    position: relative;
+    display: inline-block;
+}
+
+.svg-container:hover svg {
+    color: #92278F;
+}
+
+.svg-container .tooltip-text {
+    visibility: hidden;
+    min-width: 200px;
+    background-color: white;
+    text-align: start;
+    border-radius: 5px;
+    padding: 12px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    /* Position above the element */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.svg-container .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    /* Arrow at the bottom */
+    left: 29%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(135, 125, 125) transparent transparent transparent;
+}
+
+.svg-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.tooltip-text h6 {
+    color: #92278F;
+    margin: 0;
+    font-size: 11px;
+}
+
+.tooltip-text p {
+    margin: 5px 0 0;
+    font-size: 8px;
+    color: #000;
+}
+
+.svg-container:hover .tooltip-text {
+    display: block;
+}
+
 
 
 @media only screen and (max-width: 992px) {
