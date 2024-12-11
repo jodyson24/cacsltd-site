@@ -33,11 +33,11 @@
 
         <div class="nav-list">
             <ul class="main-menu-list">
-                <li> <a class="text-white" href="/fr/index.html"> Maison</a> </li>
-                <li> <a class="text-white" href="/fr/about.html">À propos de nous</a> </li>
-                <li> <a class="text-white" href="/fr/services.html">Nos services</a> </li>
+                <li> <a href="/fr/index.html"> Maison</a> </li>
+                <li> <a href="/fr/about.html">À propos de nous</a> </li>
+                <li> <a href="/fr/services.html">Nos services</a> </li>
                 <li>
-                    <a class="text-white" href="/en/solutions.html">Nos solutions</a>
+                    <a href="/en/solutions.html">Nos solutions</a>
                     <div class="mega-menu">
                         <div class="mega-menu-header">
                             <div class="col-lg-3">
@@ -108,12 +108,12 @@
                     </div>
                 </li>
 
-                <li> <a class="text-white" href="/fr/brands.html">Nos marques</a> </li>
-                <li> <a class="text-white" href="/fr/contact.html">Contactez-nous</a> </li>
-                <li> <a class="text-dark consultation-link bg-white" href="/fr/consultation.html"> Consultation </a>
+                <li> <a href="/fr/brands.html">Nos marques</a> </li>
+                <li> <a href="/fr/contact.html">Contactez-nous</a> </li>
+                <li> <a class="consultation-link" href="/fr/consultation.html"> Consultation </a>
                 </li>
                 <li class="lang-menu">
-                    <a class="text-white lang-menu-switch" id="languageToggle" href="#">
+                    <a class="lang-menu-switch" id="languageToggle" href="#">
                         FR </a>
                     <ul class="lang-drop-menu">
                         <li><a class="ldm-item" href="/fr/index.html">Français (FR)</a></li>
@@ -166,12 +166,8 @@
 
     <main class="ca-homepage">
         <section class="banner">
-            <video id="background-video" autoplay muted loop>
-                <source src="/assets/videos/banner.mp4" type="video/mp4">
-                <!-- Add more <source> elements for other formats if needed -->
-                Votre navigateur ne prend pas en charge la balise vidéo.
-            </video>
-            <div class="video-overlay">
+            <img src="../assets/images/homepage/banner.jpg" alt="domotique iot maison intelligente" />
+            <div class="img-overlay">
 
             </div>
             <div class="container">
@@ -494,6 +490,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+
+        // Add an event listener for scrolling
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        });
+    </script>
 </body>
 
 </html>

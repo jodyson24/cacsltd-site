@@ -32,11 +32,11 @@
 
         <div class="nav-list">
             <ul class="main-menu-list">
-                <li> <a class="text-white" href="/ar/index.html"> الصفحة الرئيسية</a> </li>
-                <li> <a class="text-white" href="/ar/about.html">من نحن</a> </li>
-                <li> <a class="text-white" href="/ar/services.html">خدماتنا</a> </li>
+                <li> <a href="/ar/index.html"> الصفحة الرئيسية</a> </li>
+                <li> <a href="/ar/about.html">من نحن</a> </li>
+                <li> <a href="/ar/services.html">خدماتنا</a> </li>
                 <li>
-                    <a class="text-white" href="/ar/solutions.html">حلولنا</a>
+                    <a href="/ar/solutions.html">حلولنا</a>
                     <div class="mega-menu">
                         <div class="mega-menu-header">
                             <div class="col-lg-3">
@@ -101,12 +101,12 @@
                     </div>
                 </li>
 
-                <li> <a class="text-white" href="/ar/brands.html">علاماتنا التجارية</a> </li>
-                <li> <a class="text-white" href="/ar/contact.html">اتصل بنا</a> </li>
-                <li> <a class="text-dark consultation-link bg-white" href="/ar/consultation.html"> الاستشارة </a>
+                <li> <a href="/ar/brands.html">علاماتنا التجارية</a> </li>
+                <li> <a href="/ar/contact.html">اتصل بنا</a> </li>
+                <li> <a class="consultation-link" href="/ar/consultation.html"> الاستشارة </a>
                 </li>
                 <li class="lang-menu">
-                    <a class="text-white lang-menu-switch" id="languageToggle" href="#">
+                    <a class=" lang-menu-switch" id="languageToggle" href="#">
                         AR </a>
                     <ul class="lang-drop-menu">
                         <li><a class="ldm-item" href="/ar/index.html">عربي (AR)</a></li>
@@ -135,15 +135,15 @@
                 <i class="fas fa-times"></i>
             </button>
             <ul>
-                <li> <a class="text-dark" href="/ar/index.html">الصفحة الرئيسية</a> </li>
-                <li> <a class="text-dark" href="/ar/about.html">من نحن</a> </li>
-                <li> <a class="text-dark" href="/ar/services.html">خدماتنا</a> </li>
-                <li> <a class="text-dark" href="/ar/solutions.html">حلولنا</a> </li>
-                <li> <a class="text-dark" href="/ar/brands.html">علاماتنا التجارية</a> </li>
-                <li> <a class="text-dark" href="/ar/contact.html">اتصل بنا</a> </li>
-                <li> <a class="text-white Consultation-link bg-dark" href="/ar/consultation.html">استشارة</a> </li>
+                <li> <a href="/ar/index.html">الصفحة الرئيسية</a> </li>
+                <li> <a href="/ar/about.html">من نحن</a> </li>
+                <li> <a href="/ar/services.html">خدماتنا</a> </li>
+                <li> <a href="/ar/solutions.html">حلولنا</a> </li>
+                <li> <a href="/ar/brands.html">علاماتنا التجارية</a> </li>
+                <li> <a href="/ar/contact.html">اتصل بنا</a> </li>
+                <li> <a class="Consultation-link" href="/ar/consultation.html">استشارة</a> </li>
                 <li class="lang-menu">
-                    <a class="text-dark lang-menu-switch" id="languageToggleMobile" href="#" aria-expanded="false">
+                    <a class="lang-menu-switch" id="languageToggleMobile" href="#" aria-expanded="false">
                         AR
                     </a>
                     <ul class="lang-drop-menu mobile-lang-drop-menu">
@@ -159,12 +159,8 @@
 
     <main class="ca-homepage">
         <section class="banner">
-            <video id="background-video" autoplay muted loop>
-                <source src="/assets/videos/banner.mp4" type="video/mp4">
-                <!-- Add more <source> elements for other formats if needed -->
-                AR+Your browser does not support the video tag.
-            </video>
-            <div class="video-overlay">
+            <img src="../assets/images/homepage/banner.jpg" alt="أتمتة المنزل الذكي" />
+            <div class="img-overlay">
 
             </div>
             <div class="container">
@@ -474,6 +470,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+
+        // Add an event listener for scrolling
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        });
+    </script>
 </body>
 
 </html>
