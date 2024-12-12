@@ -10,4 +10,9 @@ RewriteCond %{REQUEST_URI} !^/en/
 RewriteCond %{REQUEST_URI} !^/fr/
 RewriteCond %{REQUEST_URI} !^/ar/
 
-# You can add more custom rules below as needed
+# Detect language from Accept-Language header
+RewriteCond %{HTTP:Accept-Language} ^fr [NC]
+RewriteRule ^$ /fr/ [R=302,L]
+
+RewriteCond %{HTTP:Accept-Language} ^ar [NC]
+RewriteRule ^$ /ar/ [R=302,L]

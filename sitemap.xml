@@ -1,36 +1,54 @@
 # sitemap.xml
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <!-- English Pages -->
     <url>
         <loc>https://www.cacstld.com/en/</loc>
         <lastmod>2024-12-11</lastmod>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.cacstld.com/en/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.cacstld.com/fr/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://www.cacstld.com/ar/" />
     </url>
     <url>
         <loc>https://www.cacstld.com/en/about.html</loc>
         <lastmod>2024-12-11</lastmod>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.cacstld.com/en/about.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.cacstld.com/fr/about.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://www.cacstld.com/ar/about.html" />
     </url>
     <url>
         <loc>https://www.cacstld.com/en/services.html</loc>
         <lastmod>2024-12-11</lastmod>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.cacstld.com/en/services.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.cacstld.com/fr/services.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://www.cacstld.com/ar/services.html" />
     </url>
     <url>
         <loc>https://www.cacstld.com/en/solutions.html</loc>
         <lastmod>2024-12-11</lastmod>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.cacstld.com/en/solutions.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.cacstld.com/fr/solutions.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://www.cacstld.com/ar/solutions.html" />
     </url>
     <url>
         <loc>https://www.cacstld.com/en/brands.html</loc>
         <lastmod>2024-12-11</lastmod>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.cacstld.com/en/brands.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.cacstld.com/fr/brands.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://www.cacstld.com/ar/brands.html" />
     </url>
     <url>
         <loc>https://www.cacstld.com/en/contact.html</loc>
         <lastmod>2024-12-11</lastmod>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.cacstld.com/en/contact.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.cacstld.com/fr/contact.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://www.cacstld.com/ar/contact.html" />
     </url>
 
     <!-- French Pages -->
@@ -38,31 +56,49 @@
         <loc>https://www.cacstld.com/fr/</loc>
         <lastmod>2024-12-11</lastmod>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.cacstld.com/en/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.cacstld.com/fr/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://www.cacstld.com/ar/" />
     </url>
     <url>
         <loc>https://www.cacstld.com/fr/about.html</loc>
         <lastmod>2024-12-11</lastmod>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.cacstld.com/en/about.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.cacstld.com/fr/about.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://www.cacstld.com/ar/about.html" />
     </url>
     <url>
         <loc>https://www.cacstld.com/fr/services.html</loc>
         <lastmod>2024-12-11</lastmod>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.cacstld.com/en/services.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.cacstld.com/fr/services.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://www.cacstld.com/ar/services.html" />
     </url>
     <url>
         <loc>https://www.cacstld.com/fr/solutions.html</loc>
         <lastmod>2024-12-11</lastmod>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.cacstld.com/en/solutions.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.cacstld.com/fr/solutions.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://www.cacstld.com/ar/solutions.html" />
     </url>
     <url>
         <loc>https://www.cacstld.com/fr/brands.html</loc>
         <lastmod>2024-12-11</lastmod>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.cacstld.com/en/brands.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.cacstld.com/fr/brands.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://www.cacstld.com/ar/brands.html" />
     </url>
     <url>
         <loc>https://www.cacstld.com/fr/contact.html</loc>
         <lastmod>2024-12-11</lastmod>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.cacstld.com/en/contact.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.cacstld.com/fr/contact.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://www.cacstld.com/ar/contact.html" />
     </url>
 
     <!-- Arabic Pages -->
@@ -70,30 +106,48 @@
         <loc>https://www.cacstld.com/ar/</loc>
         <lastmod>2024-12-11</lastmod>
         <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.cacstld.com/en/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.cacstld.com/fr/" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://www.cacstld.com/ar/" />
     </url>
     <url>
         <loc>https://www.cacstld.com/ar/about.html</loc>
         <lastmod>2024-12-11</lastmod>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.cacstld.com/en/about.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.cacstld.com/fr/about.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://www.cacstld.com/ar/about.html" />
     </url>
     <url>
         <loc>https://www.cacstld.com/ar/services.html</loc>
         <lastmod>2024-12-11</lastmod>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.cacstld.com/en/services.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.cacstld.com/fr/services.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://www.cacstld.com/ar/services.html" />
     </url>
     <url>
         <loc>https://www.cacstld.com/ar/solutions.html</loc>
         <lastmod>2024-12-11</lastmod>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.cacstld.com/en/solutions.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.cacstld.com/fr/solutions.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://www.cacstld.com/ar/solutions.html" />
     </url>
     <url>
         <loc>https://www.cacstld.com/ar/brands.html</loc>
         <lastmod>2024-12-11</lastmod>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.cacstld.com/en/brands.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.cacstld.com/fr/brands.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://www.cacstld.com/ar/brands.html" />
     </url>
     <url>
         <loc>https://www.cacstld.com/ar/contact.html</loc>
         <lastmod>2024-12-11</lastmod>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.cacstld.com/en/contact.html" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.cacstld.com/fr/contact.html" />
+        <xhtml:link rel="alternate" hreflang="ar" href="https://www.cacstld.com/ar/contact.html" />
     </url>
 </urlset>

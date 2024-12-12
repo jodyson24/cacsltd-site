@@ -173,9 +173,9 @@
                         FR
                     </a>
                     <ul class="lang-drop-menu mobile-lang-drop-menu">
-                        <li><a class="ldm-item" href="/fr/index.html">Français (FR)</a></li>
-                        <li><a class="ldm-item" href="/en/index.html">English (EN)</a></li>
-                        <li><a class="ldm-item" href="/ar/index.html">عربي (AR)</a></li>
+                        <li><a class="ldm-item" onclick="setLanguage('fr')" href="/fr/index.html">Français (FR)</a></li>
+                        <li><a class="ldm-item" onclick="setLanguage('en')" href="/en/index.html">English (EN)</a></li>
+                        <li><a class="ldm-item" onclick="setLanguage('ar')" href="/ar/index.html">عربي (AR)</a></li>
                     </ul>
                 </li>
             </ul>
@@ -511,6 +511,45 @@
         crossorigin="anonymous"></script>
 
     <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const userLang = navigator.language || navigator.userLanguage; // Detect browser language
+            const baseURL = "https://www.cacstld.com/";
+
+            // Check if a preferred language cookie exists
+            const cookies = document.cookie.split("; ");
+            const preferredLang = cookies.find(cookie => cookie.startsWith("preferredLang="));
+            const lang = preferredLang ? preferredLang.split("=")[1] : null;
+
+            // Redirect to preferred language if cookie exists, else redirect based on browser language
+            if (!lang) {
+                if (userLang.startsWith("fr")) {
+                    window.location.href = baseURL + "fr/";
+                } else if (userLang.startsWith("ar")) {
+                    window.location.href = baseURL + "ar/";
+                } else {
+                    window.location.href = baseURL + "en/";
+                }
+            }
+        });
+
+        function setLanguage(lang) {
+            // Set a cookie for the preferred language
+            document.cookie = `preferredLang=${lang}; path=/; max-age=31536000`; // Expires in 1 year
+            window.location.href = `/${lang}/`; // Redirect to the selected language version
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Check for a saved language preference cookie
+            const cookies = document.cookie.split("; ");
+            const preferredLang = cookies.find(cookie => cookie.startsWith("preferredLang="));
+            const lang = preferredLang ? preferredLang.split("=")[1] : null;
+
+            if (lang) {
+                window.location.href = `/${lang}/`; // Redirect based on saved preference
+            }
+        });
+
         const navbar = document.getElementById('navbar');
 
         // Add an event listener for scrolling
@@ -522,6 +561,7 @@
             }
         });
     </script>
+
 </body>
 
 </html>
