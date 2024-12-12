@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 Disallow: /private/
 
-Sitemap: https://www.cacstld.com/sitemap.xml
+Sitemap: https://www.cacs-ltd.com/sitemap.xml
