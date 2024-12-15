@@ -511,7 +511,6 @@
         crossorigin="anonymous"></script>
 
     <script>
-
         document.addEventListener("DOMContentLoaded", function () {
             const userLang = navigator.language || navigator.userLanguage; // Detect browser language
             const baseURL = "https://www.cacs-ltd.com/";
@@ -522,13 +521,15 @@
             const lang = preferredLang ? preferredLang.split("=")[1] : null;
 
             // Redirect to preferred language if cookie exists, else redirect based on browser language
-            if (!lang) {
-                if (userLang.startsWith("fr")) {
-                    window.location.href = baseURL + "fr/";
-                } else if (userLang.startsWith("ar")) {
-                    window.location.href = baseURL + "ar/";
-                } else {
-                    window.location.href = baseURL + "en/";
+            if (window.location.pathname === "/") { // Only redirect on the root domain
+                if (!lang) {
+                    if (userLang.startsWith("fr")) {
+                        window.location.href = baseURL + "fr/";
+                    } else if (userLang.startsWith("ar")) {
+                        window.location.href = baseURL + "ar/";
+                    } else {
+                        window.location.href = baseURL + "en/";
+                    }
                 }
             }
         });
@@ -539,16 +540,6 @@
             window.location.href = `/${lang}/`; // Redirect to the selected language version
         }
 
-        document.addEventListener("DOMContentLoaded", function () {
-            // Check for a saved language preference cookie
-            const cookies = document.cookie.split("; ");
-            const preferredLang = cookies.find(cookie => cookie.startsWith("preferredLang="));
-            const lang = preferredLang ? preferredLang.split("=")[1] : null;
-
-            if (lang) {
-                window.location.href = `/${lang}/`; // Redirect based on saved preference
-            }
-        });
 
         const navbar = document.getElementById('navbar');
 

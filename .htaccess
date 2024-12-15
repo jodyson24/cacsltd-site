@@ -1,16 +1,16 @@
 # Enable rewrite engine
 RewriteEngine On
 
-# Redirect the root to /en directory
-RewriteCond %{REQUEST_URI} ^/$
-RewriteRule ^$ /en/ [L,R=301]
-
-# Optional: Make sure that the language directories don't get overridden by other rules
+# Exclude language directories from redirection rules
 RewriteCond %{REQUEST_URI} !^/en/
 RewriteCond %{REQUEST_URI} !^/fr/
 RewriteCond %{REQUEST_URI} !^/ar/
 
-# Detect language from Accept-Language header
+# Redirect the root to /en/ by default
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^$ /en/ [L,R=301]
+
+# Redirect based on Accept-Language header
 RewriteCond %{HTTP:Accept-Language} ^fr [NC]
 RewriteRule ^$ /fr/ [R=302,L]
 
