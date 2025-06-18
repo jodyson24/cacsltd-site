@@ -40,7 +40,7 @@
 }
 
 .banner-txt {
-  text-align: left;
+  text-align: justify;
   /* Align text to the left */
   padding: 300px 0 0 0;
 }

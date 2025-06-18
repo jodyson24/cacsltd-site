@@ -12,6 +12,7 @@
 
 .top-solution-tag {
     padding: 25px 40px 45px 85px;
+    position: relative;
 }
 
 .top-solution-tag.sticky {
@@ -26,6 +27,7 @@
     text-align: left;
     font-size: 40px;
     font-weight: 400;
+    margin-bottom: 30px;
 }
 
 .para {
