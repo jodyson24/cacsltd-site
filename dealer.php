@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         $mail->SMTPDebug = 0;
         $mail->isSMTP();
-        $mail->Host = 'mail.cacs-ltd.com';
+        $mail->Host = 'business124.web-hosting.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'dealer@cacs-ltd.com';
         $mail->Password = 'cacs_dealer$100';

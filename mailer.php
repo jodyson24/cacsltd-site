@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Server settings
         $mail->SMTPDebug = 0; // Set to 0 to disable debugging
         $mail->isSMTP();
-        $mail->Host = 'mail.cacs-ltd.com';
+        $mail->Host = 'business124.web-hosting.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'consultation@cacs-ltd.com';
         $mail->Password = 'cacs_consult$100';
